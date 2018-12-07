@@ -1,3 +1,9 @@
+# To Run:
+# OSX:  (using Xquartz)
+# DISPLAY=`hostname`:0
+#xhost +
+#docker run --rm --net=host -e DISPLAY=$DISPLAY -v $HOME/temp/firefox:/config:rw -v /tmp/.X11-unix:/tmp/.X11-unix --volume="$HOME/.Xauthority:/root/.Xauthority:rw" -v /Users/dtranquada/.xiphos:/root/.xiphos -v /Users/dtranquada/.sword:/root/.sword xiphos
+
 FROM ubuntu:18.04
 MAINTAINER Admatic Engineering Team@ADMATIC.IN
 
