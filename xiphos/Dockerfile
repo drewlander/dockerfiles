@@ -17,4 +17,4 @@ RUN export LC_ALL="en_US.UTF-8"
 RUN export LANG="en_US.UTF-8"
 RUN apt-get install -y xiphos
 
-CMD LANG="en_US.UTF-8" /usr/bin/xiphos
+ENTRYPOINT ["/usr/bin/xiphos"]
