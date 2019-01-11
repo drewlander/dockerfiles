@@ -1,0 +1,5 @@
+#To Run:
+
+```
+docker run --rm -it --name weechat  -v /path/to/local/.weechat:/home/user/.weechat weechat
+```
